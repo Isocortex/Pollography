@@ -248,6 +248,7 @@ blockquote {
   height: auto;
   z-index: 1;
 }
+
 /* Misc
 ----------------------------------------------------------------------------- */
 .object-non-visible {
@@ -320,19 +321,20 @@ blockquote {
 	transition: all 0.2s ease-in-out;
 }
 .btn-default {
-	color: #55acee;
+	color: #333;
 	border: 1px solid #cccccc;
 }
 .btn-default:hover {
 	color: #ffffff;
-	background-color: #339BEB;
-	border-color: #339BEB;
+	background-color: #4c4c4c;
+	border-color: #333;
 }
 .btn-primary{
     color: #fff !important;
     background-color: rgba(0, 0, 0, 0);
     border-color: #fff !important;
 }
+
 /* Collapse
 ---------------------------------- */
 .panel-group .panel {
@@ -400,8 +402,8 @@ blockquote {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills > li > a:hover {
-	background-color: #55acee;
-	border-color: #55acee;
+	background-color: #333;
+	border-color: #333;
 	color: #ffffff;
 }
 .nav-pills > li > a {
@@ -440,7 +442,7 @@ textarea {
 	border-radius: 0px;
 }
 .modal-header {
-	background-color: #55acee;
+	background-color: #333;
 	color: #ffffff;
 }
 .modal-header h4 {
@@ -452,6 +454,10 @@ textarea {
 	text-shadow: none;
 	filter: alpha(opacity=100);
 	opacity: 1;
+}
+.thumbnail-overview {
+	max-height: 600px;
+	overflow: scroll;
 }
 
 /* Large devices (Large desktops 1200px and up) */
@@ -695,7 +701,7 @@ textarea {
 	bottom: -1px;
 	left: 0;
 	right: -1px;
-	background-color: rgba(85, 172, 238, 0.9);
+	background-color: rgba(51, 51, 51, 0.9);
 	cursor: pointer;
 	overflow: hidden;
 	opacity: 0;
@@ -737,4 +743,31 @@ textarea {
 	filter: alpha(opacity=100);
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+/* Portfolio Images
+---------------------------------- */
+.thumbnail {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+.img-full {
+	margin: 0 auto;
+	max-height: 500px;
+	max-width: 100%;
 }
